@@ -1,0 +1,45 @@
+Accessing Helm config files
+––––––––––––––––––––––––––––––––––––
+
+you access config values with "Config":
+
+Config::get('path.root'); # /var/www/zab.bytedev.info/httpdocs/
+
+or by using the helper method "C()":
+
+C('path.root','path.inc.base','/file.php'); # /var/www/zab.bytedev.info/httpdocs/assets/includes/file.php
+
+you can pass multiple config parameters through C(), non-config values will just be used as plain text
+
+
+Building YAML config files
+––––––––––––––––––––––––––––––––––––
+
+99% of the time these three techniques are what you'll need
+
+key/value pairs:
+
+	key: value
+
+hashes:
+	
+	key:
+		child_key1: value
+		child_key2: value
+		
+setting an array:
+
+	key:
+		- value 1
+		- value 2
+		- value 3
+
+
+still confused?
+you can build compliant yaml with Config::export_yaml($array);
+
+
+
+learn more about yaml's syntax here:
+
+http://www.yaml.org/spec/1.2/spec.html

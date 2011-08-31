@@ -1,0 +1,7 @@
+path:
+	helm:
+		base: /helm/
+		config: /@helm/config/
+	app:
+		db: /@app/db/
+		migrations: /@app/db/migrate/

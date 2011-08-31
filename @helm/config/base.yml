@@ -1,0 +1,21 @@
+db:
+	development:
+		host: 
+		port: 3306
+		name: –
+		user: –
+		pw: –
+		
+	test:
+		host:
+		port: 3306
+		name: –
+		user: –
+		pw: –
+		
+	production:
+		host: 
+		port: 3306
+		name: –
+		user: –
+		pw: –
